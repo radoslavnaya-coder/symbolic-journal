@@ -1,17 +1,9 @@
-<template>
-  <TheBanner />
-</template>
-
-<script>
-import TheBanner from './views/Header/TheBanner.vue'
-
-export default {
-  name: 'App',
-  components: {
-    TheBanner
-  }
-}
+<script setup>
+import { RouterView } from 'vue-router'
 </script>
+<template>
+  <router-view></router-view>
+</template>
 <style>
 @import url(@/assets/fonts/forum-font.css);
 
