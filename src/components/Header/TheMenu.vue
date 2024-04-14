@@ -16,10 +16,10 @@ import { ref } from "vue";
 const isOpen = ref(false)
 </script>
 <style scoped>
-.menu{
+.menu {
     display: block;
     min-height: 20rem;
-    position: absolute;
+    position: fixed;
     text-align: center;
     right: 0;
     top: 0;
@@ -34,7 +34,7 @@ const isOpen = ref(false)
     grid-template-columns: 1fr;
     grid-template-rows: 7rem 7rem 7rem 7rem 7rem;
     height: 100%;
-    position: absolute;
+    position: fixed;
     text-align: center;
     right: 0;
     top: 0;

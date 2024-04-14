@@ -1,5 +1,5 @@
 <template>
-    <div class="news">
+    <div class="news" v-for="news in 10" :key="news">
         <img src="@/assets/img/banner.jpg" alt="" width="238" height="150">
         <h3>The New</h3>
         <p>It's text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quae praesentium quod sapiente saepe esse sed voluptate, aperiam molestiae quo tempora et, maxime tempore sit incidunt, architecto fuga nulla minima!</p>
