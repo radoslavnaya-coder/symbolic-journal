@@ -1,15 +1,13 @@
 <template>
     <div class="menu" v-if="!isOpen" @click="isOpen = !isOpen">
-        <a>
             <img src="/menu.svg" alt="menu">
-        </a>
     </div>
     <div class="menu-open" v-if="isOpen" @click="isOpen = !isOpen">
-        <a href=""><img src="/menu.svg" alt="menu"></a>
+        <img src="/menu.svg" alt="menu">
         <a href=""><img src="/create.svg" alt="create"></a>
         <a href=""><img src="/alert.svg" alt="alert"></a>
         <a href=""><img src="/favourite.svg" alt="favourite"></a>
-        <a href=""><img src="/user.svg" alt="user"></a>
+        <router-link to="/login"><img src="/user.svg" alt="user"></router-link>
     </div>
 </template>
 <script setup>
